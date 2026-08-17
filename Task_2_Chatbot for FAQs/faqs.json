@@ -1,0 +1,82 @@
+[
+    {
+        "question": "How can I study effectively?",
+        "answer": "Start by setting clear study goals, breaking large topics into smaller sections, studying actively, and reviewing the material regularly."
+    },
+    {
+        "question": "How can I concentrate while studying?",
+        "answer": "Study in a quiet environment, keep your phone away, remove unnecessary distractions, and use focused study sessions with short breaks."
+    },
+    {
+        "question": "What is the Pomodoro technique?",
+        "answer": "The Pomodoro technique involves studying with focused sessions, commonly 25 minutes of work followed by a 5-minute break. After several sessions, take a longer break."
+    },
+    {
+        "question": "How can I stop procrastinating?",
+        "answer": "Start with a very small task, set a specific goal, remove distractions, and use short focused study sessions to build momentum."
+    },
+    {
+        "question": "How should I prepare for exams?",
+        "answer": "Review the syllabus, create a realistic revision schedule, prioritize difficult topics, practice questions, and revise important concepts regularly."
+    },
+    {
+        "question": "How can I make a study timetable?",
+        "answer": "List your subjects and available study hours, prioritize difficult subjects, divide your time into focused sessions, and include regular breaks and revision periods."
+    },
+    {
+        "question": "How can I revise a large syllabus?",
+        "answer": "Divide the syllabus into smaller topics, prioritize important and difficult areas, create a revision schedule, and use active recall and practice questions."
+    },
+    {
+        "question": "How can I remember what I study?",
+        "answer": "Use active recall, spaced repetition, practice questions, summaries, and explain concepts in your own words instead of only rereading them."
+    },
+    {
+        "question": "How should I make good notes?",
+        "answer": "Keep notes concise and organized. Focus on key concepts, formulas, definitions, examples, and connections between ideas rather than copying everything."
+    },
+    {
+        "question": "What should I do if I do not understand a topic?",
+        "answer": "Break the topic into smaller concepts, review the prerequisites, use another explanation or example, and practice simple problems before moving to advanced ones."
+    },
+    {
+        "question": "How can I improve my memory?",
+        "answer": "Use active recall and spaced repetition, practice regularly, connect new information with concepts you already know, and maintain healthy study and sleep habits."
+    },
+    {
+        "question": "How often should I take study breaks?",
+        "answer": "Take short breaks between focused study sessions. A common approach is around 25 to 50 minutes of study followed by a short break."
+    },
+    {
+        "question": "How can I avoid distractions while studying?",
+        "answer": "Keep your phone away or use focus mode, study in a dedicated environment, close unnecessary applications, and set a specific goal for each session."
+    },
+    {
+        "question": "How can I stay motivated to study?",
+        "answer": "Set small achievable goals, track your progress, reward yourself after completing tasks, and remind yourself of the reason behind your academic goals."
+    },
+    {
+        "question": "What should I do the day before an exam?",
+        "answer": "Focus on revision rather than learning everything from scratch. Review key concepts, formulas, important notes, and practice questions while getting enough rest."
+    },
+    {
+        "question": "Should I study difficult subjects first?",
+        "answer": "Studying difficult subjects when your concentration is highest can be helpful. However, choose a schedule that matches your energy levels and learning style."
+    },
+    {
+        "question": "How can I prepare for a programming exam?",
+        "answer": "Understand the concepts first, practice writing code without copying solutions, solve problems of increasing difficulty, and review common syntax and algorithms."
+    },
+    {
+        "question": "How can I prepare for a mathematics exam?",
+        "answer": "Understand the formulas and concepts, solve worked examples, practice problems without looking at solutions, and review mistakes regularly."
+    },
+    {
+        "question": "How can I improve my problem solving skills?",
+        "answer": "Practice regularly, understand the problem before solving it, break complex problems into smaller parts, compare different approaches, and learn from mistakes."
+    },
+    {
+        "question": "What is active recall?",
+        "answer": "Active recall is a learning technique where you try to retrieve information from memory instead of simply rereading it. Practice questions and self-testing are examples."
+    }
+]
