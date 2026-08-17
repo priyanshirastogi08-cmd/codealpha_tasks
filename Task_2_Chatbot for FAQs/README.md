@@ -1,35 +1,33 @@
 # 🎓 StudyBuddy — AI Study & Exam Preparation Assistant
 
-StudyBuddy is an **NLP-based FAQ chatbot** designed to help students with common questions related to studying, exam preparation, revision, concentration, productivity, and learning techniques.
+**StudyBuddy** is an NLP-based FAQ chatbot designed to help students with common questions related to studying, exam preparation, revision, concentration, productivity, and learning techniques.
 
-The chatbot uses **TF-IDF vectorization and cosine similarity** to identify the FAQ question that is most similar to the user's query and returns the corresponding answer.
-
----
+The application uses **TF-IDF vectorization and cosine similarity** to identify the FAQ question most similar to the user's query and return the corresponding answer.
 
 ## 🚀 Live Demo
 
-The application can be run locally using Streamlit.
+🌐 **Try StudyBuddy online:**
 
-```bash
-streamlit run app.py
-```
+[StudyBuddy — Live App](https://studybuddy-ai-faq-chatbot-dasvngkcqh27jordzzjajs.streamlit.app/?utm_source=chatgpt.com)
+
+The application is publicly deployed using **Streamlit Community Cloud** and can be accessed from a browser without installing Python or running the project locally.
 
 ---
 
 ## ✨ Features
 
-* 🤖 AI-based FAQ chatbot
 * 🎓 Study and exam preparation assistance
-* 🧠 NLP-based question matching
-* 📊 TF-IDF text vectorization
-* 🔍 Cosine similarity for finding the closest FAQ
+* 🤖 NLP-based FAQ chatbot
+* 🧠 TF-IDF-based text representation
+* 🔍 Cosine similarity for FAQ matching
 * 💬 Interactive chat interface
-* 📝 Predefined study FAQ knowledge base
-* 🛡️ Similarity threshold to handle unrelated questions
+* 📚 20 predefined study-related FAQs
+* 🛡️ Similarity threshold for unrelated questions
 * 💡 Suggested questions for users
 * 🗑️ Clear chat functionality
 * ⏳ Loading indicator while processing questions
-* 📱 Responsive Streamlit interface
+* 📱 Browser-based interface accessible from desktop and mobile devices
+* ☁️ Public deployment using Streamlit Community Cloud
 
 ---
 
@@ -38,12 +36,12 @@ streamlit run app.py
 StudyBuddy currently provides answers related to:
 
 * Effective studying
-* Concentration
+* Concentration and focus
 * Pomodoro technique
 * Procrastination
 * Exam preparation
-* Study timetables
 * Revision strategies
+* Study schedules
 * Memory improvement
 * Note-taking
 * Understanding difficult topics
@@ -53,16 +51,17 @@ StudyBuddy currently provides answers related to:
 * Pre-exam preparation
 * Programming exam preparation
 * Mathematics exam preparation
-* Problem-solving skills
+* Problem-solving
 * Active recall
+* Learning strategies
 
-The chatbot currently contains **20 predefined FAQs**.
+The current knowledge base contains **20 predefined FAQs**.
 
 ---
 
 ## 🧠 How It Works
 
-StudyBuddy follows an NLP-based question-matching process.
+StudyBuddy uses a simple NLP-based information-retrieval approach.
 
 ```text
 User enters a question
@@ -73,7 +72,7 @@ TF-IDF vectorization
         ↓
 Cosine similarity calculation
         ↓
-Find most similar FAQ
+Find the most similar FAQ
         ↓
 Check similarity threshold
         ↓
@@ -82,7 +81,7 @@ Return the relevant answer
 
 ### 1. User Input
 
-The user enters a study-related question through the Streamlit chat interface.
+The user enters a question through the Streamlit chat interface.
 
 Example:
 
@@ -92,27 +91,27 @@ How can I focus while studying?
 
 ### 2. Text Preprocessing
 
-The chatbot:
+The chatbot preprocesses the input by:
 
-* Converts text to lowercase
-* Removes punctuation and special characters
-* Removes unnecessary spaces
+* Converting text to lowercase
+* Removing punctuation and special characters
+* Removing unnecessary spaces
 
 ### 3. TF-IDF Vectorization
 
-The FAQ questions and the user's question are converted into numerical vectors using **TF-IDF (Term Frequency–Inverse Document Frequency)**.
+The FAQ questions and user query are converted into numerical vectors using **TF-IDF (Term Frequency–Inverse Document Frequency)**.
 
-This allows the system to represent text numerically and compare the importance of words between questions.
+TF-IDF helps represent the importance of words and phrases within the FAQ dataset.
 
 ### 4. Cosine Similarity
 
-The system calculates the cosine similarity between the user's question and every FAQ question.
+The chatbot calculates the similarity between the user's question and the available FAQ questions using **cosine similarity**.
 
-The FAQ with the highest similarity score is selected as the potential match.
+The FAQ with the highest similarity score becomes the candidate answer.
 
 ### 5. Similarity Threshold
 
-A similarity threshold is used to prevent the chatbot from returning an unrelated answer.
+A similarity threshold is used to prevent the chatbot from returning unrelated answers.
 
 For example:
 
@@ -124,26 +123,28 @@ StudyBuddy:
 I'm sorry, I couldn't find a relevant answer to your question.
 ```
 
-This makes the chatbot more reliable for its intended study-help domain.
+This keeps the chatbot focused on its intended **study-help domain**.
 
 ---
 
 ## 🛠️ Technologies Used
 
-| Technology          | Purpose                            |
-| ------------------- | ---------------------------------- |
-| Python              | Core programming language          |
-| Streamlit           | Web application and chat interface |
-| Scikit-learn        | TF-IDF and cosine similarity       |
-| JSON                | FAQ knowledge base                 |
-| Regular Expressions | Text preprocessing                 |
+| Technology                | Purpose                            |
+| ------------------------- | ---------------------------------- |
+| Python                    | Core programming language          |
+| Streamlit                 | Web application and chat interface |
+| Scikit-learn              | TF-IDF and cosine similarity       |
+| JSON                      | FAQ knowledge base                 |
+| Regular Expressions       | Text preprocessing                 |
+| Streamlit Community Cloud | Public deployment                  |
+| GitHub                    | Source code and version control    |
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-Task_2_StudyBuddy/
+StudyBuddy-AI-FAQ-Chatbot/
 │
 ├── app.py
 ├── chatbot.py
@@ -154,11 +155,11 @@ Task_2_StudyBuddy/
 
 ### `app.py`
 
-Contains the Streamlit user interface, chat history, user input handling, loading indicator, and sidebar.
+Contains the Streamlit interface, chat functionality, session state, user input handling, loading indicator, and sidebar.
 
 ### `chatbot.py`
 
-Contains the main NLP functionality, including:
+Contains the NLP functionality, including:
 
 * FAQ loading
 * Text preprocessing
@@ -173,26 +174,26 @@ Contains the predefined study-related questions and their corresponding answers.
 
 ### `requirements.txt`
 
-Contains the Python libraries required to run the project.
+Contains the Python dependencies required to run the application.
 
 ### `README.md`
 
-Contains project documentation and usage instructions.
+Contains the documentation and setup instructions for the project.
 
 ---
 
-## ⚙️ Installation
+## ⚙️ Run Locally
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/priyanshirastogi08-cmd/codealpha_tasks.git
+git clone https://github.com/priyanshirastogi08-cmd/StudyBuddy-AI-FAQ-Chatbot.git
 ```
 
-### 2. Navigate to the StudyBuddy project
+### 2. Open the project directory
 
 ```bash
-cd codealpha_tasks/Task_2_StudyBuddy
+cd StudyBuddy-AI-FAQ-Chatbot
 ```
 
 ### 3. Install dependencies
@@ -207,13 +208,13 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-The StudyBuddy chatbot will open in your web browser.
+The application will open in your browser.
 
 ---
 
 ## 💬 Example Questions
 
-Users can ask questions such as:
+Try asking StudyBuddy:
 
 ```text
 How can I study effectively?
@@ -240,41 +241,58 @@ How can I remember what I study?
 ```
 
 ```text
-How can I improve my problem solving skills?
+How can I improve my problem-solving skills?
 ```
 
-The chatbot identifies the most relevant FAQ and returns its predefined answer.
+StudyBuddy compares each query with its FAQ knowledge base and returns the most relevant response.
 
 ---
 
 ## 🎯 Project Objective
 
-The objective of StudyBuddy is to demonstrate how **Natural Language Processing can be used to build a simple question-answering system** without requiring a generative language model.
+The objective of StudyBuddy is to demonstrate how **Natural Language Processing can be used to build a lightweight question-answering system** without relying on a generative AI API.
 
-The project focuses on:
+The project demonstrates practical concepts including:
 
 * Text preprocessing
 * Feature extraction
-* NLP-based similarity
+* TF-IDF
+* Cosine similarity
 * Information retrieval
+* Similarity-based question matching
 * Interactive chatbot development
+* Web application deployment
+
+---
+
+## ☁️ Deployment
+
+StudyBuddy is deployed using **Streamlit Community Cloud**.
+
+### Public Application
+
+[Open StudyBuddy](https://studybuddy-ai-faq-chatbot-dasvngkcqh27jordzzjajs.streamlit.app/?utm_source=chatgpt.com)
+
+The deployed application allows users to access the chatbot directly through a web browser without requiring a local Python environment.
 
 ---
 
 ## 🔮 Future Improvements
 
-Possible future improvements include:
+Possible future enhancements include:
 
 * 🎤 Voice input
 * 🔊 Text-to-speech responses
-* 📚 Larger FAQ knowledge base
+* 📚 Larger and more diverse FAQ knowledge base
 * 🌐 Multi-language support
 * 🧠 Advanced NLP models
 * 💾 Conversation history
 * 📊 User analytics
 * 🎯 Personalized study recommendations
-* 📱 Further mobile optimization
-* 🔐 User accounts and personalized learning profiles
+* 📱 Further mobile UI optimization
+* 📝 Study-plan generation
+* ❓ Interactive quizzes
+* 🧠 Flashcard generation
 
 ---
 
@@ -284,7 +302,7 @@ This project was developed as part of the **CodeAlpha AI Internship**.
 
 **Task:** FAQ Chatbot
 
-The project demonstrates an NLP-based approach to FAQ matching using **TF-IDF and cosine similarity**.
+The project demonstrates an NLP-based FAQ matching system using **TF-IDF and cosine similarity**, combined with an interactive Streamlit web interface and public cloud deployment.
 
 ---
 
@@ -299,7 +317,8 @@ Indian Institute of Information Technology Pune
 
 ## ❤️ Acknowledgements
 
+* Python
 * Streamlit
 * Scikit-learn
-* Python
+* Streamlit Community Cloud
 * CodeAlpha
