@@ -8,7 +8,7 @@ The application uses **TF-IDF vectorization and cosine similarity** to identify 
 
 🌐 **Try StudyBuddy online:**
 
-[StudyBuddy — Live App](https://studybuddy-ai-faq-chatbot-dasvngkcqh27jordzzjajs.streamlit.app/?utm_source=chatgpt.com)
+[StudyBuddy — Live App](https://studybuddy-ai-faq-chatbot-dasvngkcqh27jordzzjajs.streamlit.app/)
 
 The application is publicly deployed using **Streamlit Community Cloud** and can be accessed from a browser without installing Python or running the project locally.
 
